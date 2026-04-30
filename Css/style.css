@@ -1,0 +1,167 @@
+body{
+  margin:0;
+  font-family:Arial;
+  background-color:#f8f1e4;
+  color:#4a2e1a;
+}
+
+.menu{
+  background-color:#c48a4a;
+  padding:15px;
+  position:fixed;
+  top:0;
+  width:100%;
+  box-shadow:0px 2px 5px rgba(0,0,0,0.2);
+}
+
+.logo{
+  font-size:22px;
+  font-weight:bold;
+  color:white;
+}
+
+.links{
+  margin-top:5px;
+}
+
+.links a{
+  color:white;
+  text-decoration:none;
+  margin-right:20px;
+  font-weight:bold;
+}
+
+.links a:hover{
+  color:#2b1a0f;
+}
+
+.container{
+  margin-top:100px;
+  padding:30px;
+}
+
+.secao{
+  margin-bottom:60px;
+}
+
+h1{
+  color:#8b5e34;
+}
+
+.cards{
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
+  justify-content:flex-start;
+  align-items:stretch;
+}
+
+.card{
+  background-color:#f1ddb8;
+  padding:15px;
+  width:220px;
+  min-height:180px;
+  border-radius:10px;
+  box-shadow:0px 4px 10px rgba(0,0,0,0.15);
+  transition:0.2s;
+  text-align:center;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+  box-shadow:0px 6px 15px rgba(0,0,0,0.25);
+}
+
+.card h2{
+  color:#6b4226;
+}
+
+.card-img{
+  width:100%;
+  border-radius:8px;
+  margin-bottom:10px;
+}
+
+.avaliacao span{
+  font-size:30px;
+  color:gray;
+  cursor:pointer;
+  transition:0.2s;
+}
+
+.avaliacao span:hover{
+  transform:scale(1.2);
+}
+
+/* Footer */
+.footer{
+  background-color:#c48a4a;
+  color:white;
+  padding:20px;
+  text-align:center;
+  margin-top:50px;
+}
+
+@media(max-width:600px){
+  .cards{
+    flex-direction:column;
+  }
+  .card{
+    width:100%;
+  }
+}
+a{
+  color: rgb(179, 102, 15);
+}
+
+input, textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px;
+  margin-top: 10px;
+  border: 2px solid #e6b670;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus, textarea:focus {
+  border-color: #6c63ff;
+  box-shadow: 0 0 8px rgba(108, 99, 255, 0.4);
+}
+
+button {
+  padding: 12px 25px;
+  background: #af7905;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Hover no botão */
+button:hover {
+  background: #e4b417;
+}
+
+/* Área de comentários */
+#listaComentarios {
+  margin-top: 20px;
+  max-width: 500px;
+}
+
+/* Cada comentário */
+#listaComentarios div {
+  background: #ecd4b9;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
